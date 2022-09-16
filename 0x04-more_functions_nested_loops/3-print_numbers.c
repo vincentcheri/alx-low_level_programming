@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - function that checks for uppercase character.
- * @c: the characters to be printed
+ * print_numbers - function that prints digit.
 */
 
 void print_numbers(void)
