@@ -28,7 +28,7 @@ File 102-fibonacci.c is a program that prints the first 50 Fibonacci numbers, st
 
 File 103-fibonacci.c is a program that finds and prints the sum of the even-valued terms of the Fibonacci suite under 4000000, followed by a new line.
 
-File 104-fibonacci.c is a program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+File 104-fibonacci.c is a program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a  new line.
 
 File _putchar.c contains the _putchar() function definition.
 
