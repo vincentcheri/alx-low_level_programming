@@ -1,31 +1,29 @@
-#include "main.h"
-
+include "main.h"
 /**
-* rot13 - encodes a string using rot 13
-* @s: The string to encode
-* Return: (s) string
+ * rot13 - encodes a string using rot13
+ *
+ * @z: the string to encode
+ *
+ * Return: the new string
 */
-char *rot13(char *s)
-{
-int i = 0;
 
-while (s[i] != '\0')
+char *rot13(char *z)
 {
-if ((s[i] >= 'a' && s[i] <= 'm')
-|| (s[i] >= 'A' && s[i] <= 'M'))
+int i, j;
+char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char n[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+for (i = 0; z[i] != '\0'; i++)
 {
-s[i] += 13;
+for (j = 0; j < 56; j++)
+{
+if (z[i] == a[j])
+{
+z[i] = n[j];
+break;
+}
+}
 }
 
-else
-{
-while ((s[i] >= 'n' && s[i] <= 'z')
-|| (s[i] >= 'N' && s[i] <= 'Z'))
-{
-s[i] -= 13;
-}
-}
-i++;
-}
-return (s);
+return (z);
 }
