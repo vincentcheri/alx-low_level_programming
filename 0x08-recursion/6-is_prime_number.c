@@ -1,42 +1,43 @@
 #include "main.h"
+
+int is_divisible(int num, int div);
+int is_prime_number(int n);
+
 /**
- *  _strlen_recursion - find length of string, recursively
- * @s: pointer to beginning of string
- * Return: int representing string length
+ * is_divisible - Checks if a number is divisible.
+ * @num: The number to be checked.
+ * @div: The divisor.
+ *
+ * Return: If the number is divisible - 0.
+ *         If the number is not divisible - 1.
  */
-int _strlen_recursion(char *s)
+int is_divisible(int num, int div)
 {
-	if (*s)
-		return (_strlen_recursion(s + 1) + 1);
-	return (0);
-}
-/**
- * pal_check - recursively checks for palindrome
- * @a: for the start of string
- * @length: length of string
- * Return: 1 if pal, 0 otherwise
- */
-int pal_check(char *a, int length)
-{
-	if (length <= 1)
-		return (1);
-	else if (a[0] != a[length - 1])
+	if (num % div == 0)
 		return (0);
-	else
-		return (pal_check((a + 1), (length - 2)));
-}
-/**
- * is_palindrome - recursively checks for palindrome
- * @s: pointer to beginning of string, potential palindrome
- * Return: 1 if pal, 0 otherwise
- */
 
-int is_palindrome(char *s)
-{
-	int len;
-
-	len = _strlen_recursion(s);
-	if (len <= 1)
+	if (div == num / 2)
 		return (1);
-	return (pal_check(s, len));
+
+	return (is_divisible(num, div + 1));
+}
+
+/**
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
+ *
+ * Return: If the integer is not prime - 0.
+ *         If the number is prime - 1.
+ */
+int is_prime_number(int n)
+{
+	int div = 2;
+
+	if (n <= 1)
+		return (0);
+
+	if (n >= 2 && n <= 3)
+		return (1);
+
+	return (is_divisible(n, div));
 }
