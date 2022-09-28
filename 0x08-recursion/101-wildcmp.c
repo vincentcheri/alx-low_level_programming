@@ -8,71 +8,15 @@
  * Return: 1 if the strings can be considered identical, 0 otherwise
  */
 
-
-int wildcmp(const char *wild, const char *string) {
-  /* Written by Jack Handy - jakkhandy@hotmail.com */
-
-  const char *cp = NULL, *mp = NULL;
-
-  while ((*string) && (*wild != '*')) {
-    if ((*wild != *string) && (*wild != '?')) {
-      return 0;
-    }
-    wild++;
-    string++;
-  }
-
-  while (*string) {
-    if (*wild == '*') {
-      if (!*++wild) {
-        return 1;
-      }
-      mp = wild;
-      cp = string+1;
-    } else if ((*wild == *string) || (*wild == '?')) {
-      wild++;
-      string++;
-    } else {
-      wild = mp;
-      string = cp++;
-    }
-  }
-
-  while (*wild == '*') {
-    wild++;
-  }
-  return !*wild;
-}
-
-int wildicmp(const char *wild, const char *string) {
-  const char *cp = NULL, *mp = NULL;
-
-  while ((*string) && (*wild != '*')) {
-    if ((tolower(*wild) != tolower(*string)) && (*wild != '?')) {
-      return 0;
-    }
-    wild++;
-    string++;
-  }
-
-  while (*string) {
-    if (*wild == '*') {
-      if (!*++wild) {
-        return 1;
-      }
-      mp = wild;
-      cp = string+1;
-    } else if ((tolower(*wild) == tolower(*string)) || (*wild == '?')) {
-      wild++;
-      string++;
-    } else {
-      wild = mp;
-      string = cp++;
-    }
-  }
-
-  while (*wild == '*') {
-    wild++;
-  }
-  return !*wild;
+int wildcmp(char *s1, char *s2)
+{
+	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+		return (0);
+	if (*s1 == '\0' && *s2 == '\0')
+		return (1);
+	if (*s1 == *s2)
+		return (wildcmp(s1 + 1, s2 + 1));
+	if (*s2 == '*')
+		return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
+	return (0);
 }
