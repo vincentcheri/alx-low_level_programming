@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function that checks for uppercase character.
+ * main - checks numbers that are divisible by 5 and 3 separately. and numbers that both 3 and 5 can go in
  * Return: 0
 */
 int main(void)
