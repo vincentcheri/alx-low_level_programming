@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - checks numbers that are divisible by 5 and 3 separately. and numbers that both 3 and 5 can go in
- * Return: 0
-*/
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int a = 1;
