@@ -21,3 +21,10 @@ while (s[i] != '\0')
 
 return (i);
 }
+
+/*--------------------------this works toooo--------------------*/
+
+int _strlen(char *s)
+{
+    return(strlen(s));
+}
