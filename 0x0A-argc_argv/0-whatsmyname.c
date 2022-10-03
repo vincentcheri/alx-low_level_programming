@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <main.h>
 
-int main(int argc, char * argv[])
+/**
+* main - prints the name of the programme file
+* @argc: this is the argument counter
+* @argv: this is the argument vector
+*/
+
+int main(int argc, char *argv[])
 {
 printf("%s\n", argv[0]);
     
