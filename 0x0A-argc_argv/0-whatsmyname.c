@@ -2,9 +2,10 @@
 #include <main.h>
 
 /**
-* main - prints the name of the programme file
-* @argc: this is the argument counter
-* @argv: this is the argument vector
+* main - Prints the name of the programme file
+* @argc: This is the argument counter
+* @argv: This is the argument vector
+* Return: Always 0 (Success)
 */
 
 int main(int argc, char *argv[])
