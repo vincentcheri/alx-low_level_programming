@@ -14,7 +14,7 @@ int i;
 for(i=0; argv[i] != '\0'; i++)
 {
 
-printf("argv[%d] = %s\n", i,argv[i]);
+printf("%s\n", argv[i]);
 
 }
 return (0);
