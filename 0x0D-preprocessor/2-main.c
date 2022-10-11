@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
-* main - prints the name of the file it was compiled from
-* Return: 0 always
+*main - prints the name of the file it was compiled from
+*return: 0 always
 */
-
 int main()
 {
 printf("%s", __FILE__);
