@@ -2,10 +2,10 @@
 #define DOG_H
 
 /**
-*struct dog - name of the struct
-*@name - name of dog
-*@owner - name of owner
-*@age - age of dog
+*struct dog - a dog's basic info
+*@name: first member
+*@owner: second member
+*@age: age of dog
 *Description: Longer description
 */
 
