@@ -6,8 +6,9 @@
 * Return: 0 always
 */
 
-int main(void)
+int main()
 {
-printf("%d", __FILE__);
+printf("%s", __FILE__);
 printf("\n");
+return (0);
 }
