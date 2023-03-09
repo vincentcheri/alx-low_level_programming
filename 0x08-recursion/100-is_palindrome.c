@@ -1,3 +1,5 @@
+#include "main.h"
+
 int pal_length(char *s, int length);
 int _strlen_recursion(char *s);
 
@@ -6,6 +8,7 @@ int _strlen_recursion(char *s);
  * @s: char pointer
  * Return: int
  */
+
 int is_palindrome(char *s)
 {
 	int length = _strlen_recursion(s);
@@ -23,6 +26,7 @@ int is_palindrome(char *s)
  * @length: int
  * Return: int
  */
+
 int pal_length(char *s, int length)
 {
 	if (*s == 0)
@@ -41,6 +45,7 @@ int pal_length(char *s, int length)
  * @s: char pointer
  * Return: int
  */
+
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
