@@ -1,2 +1,3 @@
-school: all
-	gcc -o school all
+all: school
+school: m.o school.o
+	gcc school school.c m.c -o school
