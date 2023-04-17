@@ -1,2 +1,2 @@
 school: all
-	gcc -o school all -I.	
+	gcc -o school all
