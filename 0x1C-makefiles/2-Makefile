@@ -4,5 +4,5 @@ OBJ= %.o
 NAME= school
 
 all: school
-school: %.c
+school: $(SRC)
 	$(gcc) -o $@ $(SRC)
