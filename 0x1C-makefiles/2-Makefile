@@ -11,4 +11,5 @@ $(NAME): $(OBJ)
 
 
 $(OBJ): $(SRC)
+
 	$(CC) -c -o $(OBJ) $<
