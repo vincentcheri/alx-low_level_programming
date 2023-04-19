@@ -10,6 +10,7 @@ $NAME: $(OBJ)
 	$(CC) $< -o $@
 %.o: %.c
 	$(CC) -c $< -o $@
+	
 .PHONY: clean oclean fclean re
 
 clean:
