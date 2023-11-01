@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - Prints an integer.
+ * print_number - Prints a prime factor
  * @n: The integer to be printed.
  */
 void print_number(int n)
