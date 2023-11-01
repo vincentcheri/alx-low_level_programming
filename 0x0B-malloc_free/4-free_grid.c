@@ -5,7 +5,7 @@
  * free_grid - frees 2D grid
  * @grid: double pointer to array of integer pointer
  * @height: number of rows
- * Return: nothing
+ * Return: nothing.
  */
 
 void free_grid(int **grid, int height)
