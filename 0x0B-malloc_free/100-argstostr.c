@@ -77,7 +77,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		over_all_len += _strlen(av[i]) + 1;
 
-	mem_chunk = (char *)malloc(sizeof(char) * over_all_len);
+	mem_chunk = (char *)malloc(sizeof(char) * over_all_len + 1);
 
 	if (mem_chunk == NULL)
 		return (NULL);
@@ -92,6 +92,8 @@ char *argstostr(int ac, char **av)
 		empty_mem_track++;
 
 	}
+
+	mem_chunk[empty_mem_track] = '\0';
 
 	return (mem_chunk);
 }
