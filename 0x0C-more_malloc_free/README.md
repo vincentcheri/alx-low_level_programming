@@ -1,3 +1,0 @@
-calloc()
-realloc()
-exit()
