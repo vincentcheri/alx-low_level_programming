@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
@@ -10,5 +10,6 @@ int check_number(char *str);
 unsigned int string_length(char *str);
 void print_string(char *str);
 void *_calloc(unsigned int number, unsigned int size);
+int _putchar(char c);
 
 #endif
