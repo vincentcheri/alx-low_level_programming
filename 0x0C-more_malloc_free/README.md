@@ -1,0 +1,6 @@
+calloc()
+malloc()
+realloc()
+exit()
+
+
