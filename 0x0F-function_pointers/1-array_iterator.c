@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * array_iterator - function that executes a function given as a parameter.
+ * array_iterator - function that executes a function given as a parameter
  * @array: pointer to array
  * @action: pointer to a function
- * @size: size of the array
+ * @size: size of the array to be iterated
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
@@ -14,8 +14,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array != 0 && action != 0)
 	{
 		for (a = 0; a < size; a++)
-		{
-		    action(array[a]);
-		}
+			action(array[a]);
 	}
 }
