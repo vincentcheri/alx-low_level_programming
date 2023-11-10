@@ -25,7 +25,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		}
 
-		printf("%s", string_atm);
+		else
+                {
+                        printf("%s", string_atm);
+
+                }
 
 		if (i < n - 1 && separator != NULL)
 		{
