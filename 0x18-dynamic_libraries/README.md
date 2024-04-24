@@ -2,6 +2,6 @@ OOHHH! Well i usually see .dll when i was using windows and never knew it stands
 
 Dynamic libraries are very crucial in the world of modularity and projects where size of executable matters.
 
-These libraries are Loaded in the memory so when they are needed only the memory address where the .o form of the functions is, is copied instead of a whole bunch of binary codes like it is in Static libraries.
+These libraries are Loaded in the memory so when they are needed only the memory address where the .o form of the functions is copied instead of a whole bunch of binary codes like it is in Static libraries.
 
 0x18. C - Dynamic libraries
