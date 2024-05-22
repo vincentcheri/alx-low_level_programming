@@ -1,5 +1,10 @@
 #include "lists.h"
 
+/**
+ * pop_listint - function to remove the head node of a list
+ * @head: pointer to the pointer of the list
+ * Return: the value stored in the head node or zero
+ */
 
 int pop_listint(listint_t **head)
 {
